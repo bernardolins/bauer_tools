@@ -7,7 +7,7 @@ DEP=../obj
 BIN=bin
 INC=-I/opt/gtest/include -I../inc -Isrc -I../src
 FLAGS=-g -L/opt/gtest/lib -lgtest -lgtest_main -lpthread
-OBJS=$(OBJ)/test_parser.o $(OBJ)/test_main.o $(DEP)/bauer_parser.o
+OBJS=$(OBJ)/yaml_test.o $(OBJ)/test_main.o $(DEP)/bauer_yaml.o
 
 test-all: $(OBJS)
 	$(CC) -o $(BIN)/test-all $(OBJS) $(INC) $(FLAGS)
