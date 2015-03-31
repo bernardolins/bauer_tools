@@ -1,7 +1,9 @@
 # bauer_tools
 
 # Dependencies:
-To run tests you should install google test framework gtest
+
+### Test - google test framework
+To run tests you should gtest
 >unzip gtest-1.7.0.zip<br />
 >cd gtest-1.7.0<br />
 >sudo mkdir /opt/gtest /opt/gtest/include /opt/gtest/lib<br />
@@ -13,3 +15,6 @@ To run tests you should install google test framework gtest
 >rm /opt/gtest/lib/libgtest_main.la<br />
 >sudo cp -a lib/libgtest.la /opt/gtest/lib<br />
 >sudo cp -a lib/libgtest_main.la /opt/gtest/lib<br />
+
+### YAML parsing - cpp-yaml
+
