@@ -16,23 +16,33 @@ To run tests you should install gtest
 >sudo cp -a lib/libgtest.la /opt/gtest/lib<br />
 >sudo cp -a lib/libgtest_main.la /opt/gtest/lib<br />
 
-#### boost-cpp
-To install boost library, you just have to download it at 
->http://www.boost.org/users/history/version_1_57_0.html
-Then, extract and cd to boost root directory. Now you just need to run
->./bootstrap.sh
->./b2
-If you want to install boost to your system, just run
->sudo ./b2 install
-Boost will be installed under /usr/local
-#### cpp-yaml
-After installing boost, you can install cpp-yaml. Make sure cmake is installed in your system:
->apt-get install cmake
-Then, cd to cpp-yaml root directory and run
->mkdir build
->cd build
->cmake ..
->make
-cpp-yaml will be builded. If you want, install it to your system running
->sudo make install
-Then you are ready to go!
+#### boost-cpp<br />
+To install boost library, you just have to download it at<br /> 
+>http://www.boost.org/users/history/version_1_57_0.html<br />
+Then, extract and cd to boost root directory. Now you just need to run<br />
+>./bootstrap.sh<br />
+>./b2<br />
+
+If you want to install boost to your system, just run<br />
+
+>sudo ./b2 install<br />
+
+Boost will be installed under /usr/local<br />
+
+#### cpp-yaml<br />
+After installing boost, you can install cpp-yaml. Make sure cmake is installed in your system:<br />
+
+>apt-get install cmake<br />
+
+Then, cd to cpp-yaml root directory and run<br />
+
+>mkdir build<br />
+>cd build<br />
+>cmake ..<br />
+>make<br />
+
+cpp-yaml will be builded. If you want, install it to your system running<br />
+
+>sudo make install<br />
+
+Then you are ready to go!<br />
