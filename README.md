@@ -19,7 +19,9 @@ To run tests you should install gtest
 #### boost-cpp<br />
 To install boost library, you just have to download it at<br /> 
 >http://www.boost.org/users/history/version_1_57_0.html<br />
+
 Then, extract and cd to boost root directory. Now you just need to run<br />
+
 >./bootstrap.sh<br />
 >./b2<br />
 
