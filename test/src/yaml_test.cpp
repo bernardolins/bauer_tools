@@ -13,5 +13,5 @@ class yaml_test : public ::testing::Test {
 };
 
 TEST_F(yaml_test, load_yaml) {
-    ASSERT_TRUE(bauer::tools::bauer_yaml::load_yaml("test.yml"));
+    ASSERT_NO_THROW(bauer::tools::bauer_yaml::load_yaml("test.yml"));
 }
