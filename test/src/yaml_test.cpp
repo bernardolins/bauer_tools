@@ -35,3 +35,12 @@ TEST_F(yaml_test, should_get_not_defined_when_key_not_found) {
 
     ASSERT_FALSE(yaml.get_key("invalid_key").IsDefined());
 }
+
+TEST_F(yaml_test, should_get_subkey) {
+    bauer::tools::bauer_yaml yaml;
+    yaml.load_yaml("files/test.yml");
+
+
+   ASSERT_EQ(yaml.get_subkey_of("key_with_subkey", "subkey1").as<std::string>(), "subvalue1");
+
+}
