@@ -1,10 +1,12 @@
 #include "bauer_yaml.h"
 
 void bauer::tools::bauer_yaml::load_yaml(std::string path) {
-     node = YAML::LoadFile(path);
-     //std::cout << node.as<std::string>();
+     this->node = YAML::LoadFile(path);
+     this->path = path;
 }
 
-/*list<std::string> bauer::tools::bauer_yaml::get_workers_list() {
-        
-}*/
+list<std::string> bauer::tools::bauer_yaml::load_workers_list() {
+       if(this->node) {
+       
+       } 
+}
