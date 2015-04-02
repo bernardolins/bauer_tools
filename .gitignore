@@ -3,4 +3,4 @@ lib/*
 /test/obj
 /test/bin
 /obj
-/bin
+/bin/test-all
