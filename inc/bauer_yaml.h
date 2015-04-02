@@ -4,15 +4,19 @@
 #include "yaml-cpp/yaml.h"
 #include <iostream>
 
+
 namespace bauer {
     namespace tools {
+
+        typedef YAML::Node bauer_yaml_node;
+
         class bauer_yaml {
             private:
-                YAML::Node node;
+                bauer_yaml_node root_node;
                 std::string path;
             public:
                 void load_yaml(std::string path);
-                void get_worker_list();
+                bauer_yaml_node get_key(std::string key);
         };
     }
 }
