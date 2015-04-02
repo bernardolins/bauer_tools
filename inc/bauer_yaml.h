@@ -9,9 +9,9 @@ namespace bauer {
         class bauer_yaml {
             private:
                 YAML::Node node;
+                std::string path;
             public:
                 void load_yaml(std::string path);
-                //static bool load_yaml(std::string path);
                 void get_worker_list();
         };
     }
