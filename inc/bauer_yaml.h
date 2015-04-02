@@ -17,6 +17,7 @@ namespace bauer {
             public:
                 void load_yaml(std::string path);
                 bauer_yaml_node get_key(std::string key);
+                bauer_yaml_node get_subkey_of(std::string key, std::string subkey);
         };
     }
 }
