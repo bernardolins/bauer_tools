@@ -54,11 +54,11 @@ Bauer tools come with a set of tools to manipulate YAML files.<br />
 
 ###### Loading YAML file:
 ````c++
-> #include "bauer/bauer_tools.h"<br />
-> <br />
-> int main() { <br /> 
->    bauer::tools::bauer_yaml yaml; <br />
->    yaml.load_yaml("test.yml"); <br />    
-> } <br />
+ #include "bauer/bauer_tools.h"  
+  
+ int main() {   
+    bauer::tools::bauer_yaml yaml;  
+    yaml.load_yaml("test.yml");      
+ }
 ````
 
