@@ -13,3 +13,13 @@ bauer::tools::bauer_yaml_node bauer::tools::bauer_yaml::get_subkey_of(std::strin
     return this->root_node[key][subkey];
       
 }
+
+std::vector<bauer::tools::bauer_yaml_node> bauer::tools::bauer_yaml::get_subnode_list(std::string subkey) {
+    std::vector<bauer::tools::bauer_yaml_node> key_list;
+
+    for(std::size_t i = 0; i != root_node[subkey].size(); i++) {
+        key_list.push_back(root_node[i]);
+    }
+    
+    return key_list;
+}
