@@ -59,7 +59,7 @@ TEST_F(yaml_test, should_success_when_node_is_not_sequence) {
    ASSERT_EQ(yaml.get_subnode_list("single_key").size(), 1); 
 }
 
-TEST_F(yaml_test, should_return_0_size_vector_when__yaml_is_not_a_sequence) {
+TEST_F(yaml_test, should_return_0_size_vector_when_yaml_is_not_a_sequence) {
     bauer::tools::bauer_yaml yaml;
     yaml.load_yaml("files/test.yml");
     
