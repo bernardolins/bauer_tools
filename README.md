@@ -51,14 +51,25 @@ Then you are ready to go!<br />
 
 ### YAML
 Bauer tools come with a set of tools to manipulate YAML files.<br />
-
+Those are just abstractions from yaml-cpp lib <br />
 ###### Loading YAML file:
 ````c++
- #include "bauer/bauer_tools.h"  
-  
- int main() {   
-    bauer::tools::bauer_yaml yaml;  
-    yaml.load_yaml("test.yml");      
- }
+#include "bauer/bauer_tools.h"  
+ 
+int main() {   
+   bauer::tools::bauer_yaml yaml;  
+   yaml.load_yaml("test.yml");      
+}
 ````
 
+##### Getting a node by name:
+You can get a specific node by name <br />
+````c++
+#include "bauer/bauer_tools.h"
+
+int main() {
+   bauer::tools::bauer_yaml yaml;  
+   yaml.load_yaml("test.yml");      
+
+   bauer::tools::bauer_yaml_node named_key = yaml.get_key("keyname");
+}
