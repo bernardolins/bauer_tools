@@ -1,6 +1,6 @@
 # bauer_tools
 
-### Dependencies:
+### Installing:
 
 #### gtest framewok
 To run tests you should install gtest
@@ -48,3 +48,17 @@ cpp-yaml will be builded. If you want, install it to your system running<br />
 >sudo make install<br />
 
 Then you are ready to go!<br />
+
+### YAML
+Bauer tools come with a set of tools to manipulate YAML files.<br />
+
+###### Loading YAML file:
+````c++
+> #include "bauer/bauer_tools.h"<br />
+> <br />
+> int main() { <br /> 
+>    bauer::tools::bauer_yaml yaml; <br />
+>    yaml.load_yaml("test.yml"); <br />    
+> } <br />
+````
+
