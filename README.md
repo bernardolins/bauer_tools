@@ -63,6 +63,7 @@ int main() {
 ````
 
 ##### Getting a node by name:
+
 You can get a specific node by name <br />
 ````c++
 #include "bauer/bauer_tools.h"
