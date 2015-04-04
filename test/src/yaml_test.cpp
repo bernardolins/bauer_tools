@@ -44,3 +44,10 @@ TEST_F(yaml_test, should_get_subkey) {
    ASSERT_EQ(yaml.get_subkey_of("key_with_subkey", "subkey1").as<std::string>(), "subvalue1");
 
 }
+
+TEST_F(yaml_test, should_get_list_of_subkeys) {
+    bauer::tools::bauer_yaml yaml;
+    yaml.load_yaml("files/test.yml");
+
+    ASSERT_EQ(yaml.get_subnode_list("key_with_list").size(), 4);
+}
