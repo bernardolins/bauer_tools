@@ -1,4 +1,6 @@
 image: bernardolins/bauer_tools
+env:
+    - LD_LIBRARY_PATH=/opt/gtest/lib
 script:
     - cd test/
     - mkdir obj
