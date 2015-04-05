@@ -1,6 +1,5 @@
 *.swp
 lib/*
 /test/obj
-/test/bin
 /obj
 /bin/test-all
