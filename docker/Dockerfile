@@ -5,10 +5,11 @@ MAINTAINER bernardolins28@gmail.com
 ENV GTEST_VERSION 1.7.0
 ENV BOOST_VERSION 1.57.0
 ENV BOOST_VERSION_LINK 1_57_0
+ENV YAML_CPP_VERSION 0.5.1
 
 WORKDIR /tmp
 
-RUN apt-get install unzip bzip2
+RUN apt-get install -y unzip bzip2
 
 #installing gtest
 RUN wget https://googletest.googlecode.com/files/gtest-$GTEST_VERSION.zip \
@@ -31,4 +32,14 @@ RUN wget http://downloads.sourceforge.net/project/boost/boost/$BOOST_VERSION/boo
     && ./bootstrap.sh \
     && ./b2 \
     && ./b2 install
+
+#### installing yaml-cpp
+RUN wget https://yaml-cpp.googlecode.com/files/yaml-cpp-0.5.1.tar.gz \
+    && tar -xvzf yaml-cpp-$YAML_CPP_VERSION.tar.gz \
+    && cd  yaml-cpp-$YAML_CPP_VERSION \
+    && mkdir build \
+    && cd build \
+    && cmake .. \
+    && make \
+    && make install
 
