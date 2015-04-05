@@ -4,7 +4,6 @@ env:
 script:
     - cd test/
     - mkdir obj
-    - mkdir bin
     - make
     - cd bin/
     - ./test-all
