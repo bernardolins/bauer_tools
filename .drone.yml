@@ -1,6 +1,6 @@
 image: bernardolins/bauer_tools
 script:
-    - cd tests/
+    - cd test/
     - make
     - cd bin/
     - ./test-all
