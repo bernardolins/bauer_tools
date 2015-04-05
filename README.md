@@ -1,5 +1,7 @@
 # bauer_tools
 
+[![Build Status](http://104.131.120.228:8080/api/badge/github.com/bernardolins/bauer_tools/status.svg?branch=master)](http://104.131.120.228:8080/github.com/bernardolins/bauer_tools)
+
 ### Installing:
 
 #### gtest framewok
