@@ -1,0 +1,10 @@
+key1: "value1"
+key_with_subkey:
+    subkey1: "subvalue1"
+key_with_list:
+    subkey1: "subvalue1"
+    subkey2: "subvalue2"
+    subkey3: "subvalue3"
+    subkey4: "subvalue4"
+single_key:
+    single_subkey: "singlesubvalue1"
