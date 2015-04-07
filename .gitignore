@@ -2,4 +2,4 @@
 lib/*
 /test/obj
 /obj
-/bin/test-all
+/test/bin/test-all
