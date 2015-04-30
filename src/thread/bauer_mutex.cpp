@@ -14,7 +14,7 @@ int bauer_mutex::lock()
 
 int bauer_mutex::unlock()
 {
-
+	return pthread_mutex_unlock(&mutex_var);
 }
 
 }
