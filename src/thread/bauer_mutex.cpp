@@ -9,7 +9,7 @@ bauer_mutex::bauer_mutex()
 
 int bauer_mutex::lock()
 {
-	
+	return pthread_mutex_lock(&mutex_var);
 }
 
 int bauer_mutex::unlock()
