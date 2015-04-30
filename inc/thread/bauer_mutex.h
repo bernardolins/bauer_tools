@@ -3,6 +3,9 @@
 
 #include <pthread.h>
 
+namespace bauer{
+	
+
 class bauer_mutex
 {
 private:
@@ -12,5 +15,6 @@ public:
 	int lock();
 	int unlock();
 };
+}
 
 #endif
