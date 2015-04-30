@@ -4,12 +4,12 @@ namespace bauer{
 
 bauer_mutex::bauer_mutex()
 {
-
+	pthread_mutex_init(&mutex_var, NULL);
 }
 
 int bauer_mutex::lock()
 {
-
+	
 }
 
 int bauer_mutex::unlock()
