@@ -1,3 +1,4 @@
+#sudo docker run -ti --rm -e LD_LIBRARY_PATH=/opt/gtest/lib -v /home/fausto/Project/frila:/var/project bernardolins/bauer_tools /bin/bash
 CC=g++
 
 FLAGS=-Wall -lyaml-cpp

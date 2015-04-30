@@ -5,12 +5,9 @@
 #include <iostream>
 
 namespace bauer {
-namespace tools {
-
-    class bauer_exception: public std::exception {
-        virtual const char* what() const throw();
-    };
-}
+class bauer_exception: public std::exception {
+    virtual const char* what() const throw();
+};
 }
 
 #endif
