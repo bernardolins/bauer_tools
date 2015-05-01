@@ -1,5 +1,6 @@
 #include <iostream>
 #include <pthread>
+#include "bauer_thread_not_created_exception.h"
 
 namespace bauer {
 	class bauer_thread
