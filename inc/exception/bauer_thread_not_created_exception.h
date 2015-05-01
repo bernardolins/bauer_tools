@@ -4,9 +4,13 @@
 #include <iostream>
 #include "bauer_exception"
 
+namespace bauer {
+
 class bauer_thread_not_created_exception: public bauer_exception
 {
 public:
 	const char* what() const throw();	
 };
+
+}
 #endif
