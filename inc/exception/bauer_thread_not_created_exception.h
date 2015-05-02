@@ -2,7 +2,7 @@
 #define _BAUER_THREAD_NOT_CREATED_EXCEPTION_
 
 #include <iostream>
-#include "bauer_exception"
+#include "bauer_exception.h"
 
 namespace bauer {
 
