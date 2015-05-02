@@ -1,5 +1,8 @@
+#ifndef _BAUER_THREAD_
+#define _BAUER_THREAD_
+
 #include <iostream>
-#include <pthread>
+#include <pthread.h>
 #include "bauer_thread_not_created_exception.h"
 
 namespace bauer {
@@ -14,6 +17,8 @@ namespace bauer {
 		void start();
 		void join();
 		virtual void exec();
-		int pid(); 
+		int get_pid(); 
 	};
 }
+
+#endif
