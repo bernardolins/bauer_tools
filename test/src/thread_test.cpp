@@ -13,5 +13,6 @@ class thread_test : public ::testing::Test {
 };
 
 TEST_F(thread_test, should_start_thread) {
-	
+	bauer::bauer_thread thread;
+	ASSERT_NO_THROW(thread.start());
 }
