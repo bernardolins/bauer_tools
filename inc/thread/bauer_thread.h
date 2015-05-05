@@ -11,9 +11,10 @@ namespace bauer {
 	private:
 		int pid;
 		pthread_t thread;
-		
+		static void* thread_exec(void*);
 	public:
-		~bauer_thread();
+		bauer_thread() {}
+		// ~bauer_thread();
 		void start();
 		void join();
 		virtual void exec();
