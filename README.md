@@ -77,3 +77,24 @@ int main() {
    bauer::tools::bauer_yaml_node named_key = yaml.get_key("keyname");
 }
 ````
+### Docker
+
+You can run your code using bauer_tools docker image
+
+### Getting image:
+
+To run the image, you just have to pull it from dockerhub
+
+```
+$ docker pull bernardolins/bauer_tools
+```
+
+### Running the container:
+
+You should mount the source code directory into the container
+
+```
+$ docker run -ti -v /path/to/source:/bauer_tools bernardolins/bauer_tools /bin/bash
+```
+
+You can find the source code inside of container's **/bauer_tools** directory. Every change will make outside of the container will be done inside the container either.
