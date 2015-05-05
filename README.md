@@ -81,7 +81,7 @@ int main() {
 
 You can run your code using bauer_tools docker image
 
-### Getting image:
+#### Getting the image:
 
 To run the image, you just have to pull it from dockerhub
 
@@ -89,7 +89,7 @@ To run the image, you just have to pull it from dockerhub
 $ docker pull bernardolins/bauer_tools
 ```
 
-### Running the container:
+#### Running the container:
 
 You should mount the source code directory into the container
 
