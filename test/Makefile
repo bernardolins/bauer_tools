@@ -12,8 +12,8 @@ INC=-I/opt/gtest/include -I../inc -I../inc/thread -I../inc/exception -Isrc -I../
 DEPINC=/usr/local/include
 DEPLIB=/usr/local/lib
 
-FLAGS=-g -L/opt/gtest/lib -lgtest -lgtest_main -lpthread -lyaml-cpp
-OBJS=$(OBJ)/yaml_test.o $(OBJ)/exception_test.o $(OBJ)/thread_test.o $(OBJ)/test_main.o $(OBJ)/bauer_yaml.o $(OBJ)/bauer_exception.o
+FLAGS=-g -L/opt/gtest/lib -lgtest -lgtest_main -pthread -lyaml-cpp
+OBJS=$(OBJ)/yaml_test.o $(OBJ)/exception_test.o $(OBJ)/thread_test.o $(OBJ)/test_main.o $(OBJ)/bauer_yaml.o $(OBJ)/bauer_exception.o $(OBJ)/bauer_thread_not_created_exception.o $(OBJ)/bauer_thread.o
 
 NAME=test-all
 
@@ -37,14 +37,14 @@ $(OBJ)/thread_test.o: $(SRC)/thread_test.cpp
 $(OBJ)/bauer_yaml.o: $(DEP)/bauer_yaml.cpp
 	$(CC) -o $(OBJ)/bauer_yaml.o -c $(DEP)/bauer_yaml.cpp $(INC) $(FLAGS)
 
-$(OBJ)/bauer_thread.o: $(DEP)/bauer_thread.cpp
-	$(CC) -o $(OBJ)/bauer_thread.o -c $(DEP)/bauer_thread.cpp $(INC) $(FLAGS)
+$(OBJ)/bauer_thread.o: $(DEP)/thread/bauer_thread.cpp
+	$(CC) -o $(OBJ)/bauer_thread.o -c $(DEP)/thread/bauer_thread.cpp $(INC) $(FLAGS)
 
 $(OBJ)/bauer_exception.o: $(DEP)/bauer_exception.cpp
 	$(CC) -o $(OBJ)/bauer_exception.o -c $(DEP)/bauer_exception.cpp $(INC) $(FLAGS)
 
-$(OBJ)/bauer_thread_not_created_exception.o: $(DEP)/bauer_thread_not_created_exception.cpp
-	$(CC) -o $(OBJ)/bauer_thread_not_created_exception.o -c $(DEP)/bauer_thread_not_created_exception.cpp $(INC) $(FLAGS)
+$(OBJ)/bauer_thread_not_created_exception.o: $(DEP)/exception/bauer_thread_not_created_exception.cpp
+	$(CC) -o $(OBJ)/bauer_thread_not_created_exception.o -c $(DEP)/exception/bauer_thread_not_created_exception.cpp $(INC) $(FLAGS)
 
 clear:
 	rm -rf $(OBJ) $(BIN)/$(NAME)
